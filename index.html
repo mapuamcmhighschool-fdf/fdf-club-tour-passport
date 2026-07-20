@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FDF Club Tour Passport</title>
+<meta name="theme-color" content="#0b1f4d" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1f4d;--blue:#1546a0;--royal:#2463eb;--red:#d9202f;--yellow:#ffd54a;--ink:#10213f;--paper:#f7f4ec;--muted:#61708e;--white:#fff;--shadow:0 18px 50px rgba(10,31,75,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f7f9ff 0,#eef3ff 48%,#fff8eb 100%);min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(circle at 10% 10%,#2463eb 0 2px,transparent 3px),radial-gradient(circle at 80% 30%,#d9202f 0 2px,transparent 3px);background-size:46px 46px,62px 62px}
+button,input,select{font:inherit}button{cursor:pointer}.hidden{display:none!important}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(11,31,77,.94);backdrop-filter:blur(14px);color:white;border-bottom:3px solid var(--red)}
+.topbar-inner{max-width:1180px;margin:auto;display:flex;align-items:center;gap:14px;padding:12px 18px}.brand-dot{width:38px;height:38px;border-radius:13px;background:linear-gradient(145deg,var(--red),#ff5966);display:grid;place-items:center;font-weight:900;box-shadow:inset 0 0 0 3px rgba(255,255,255,.25)}
+.brand-text strong{font-family:'Baloo 2';font-size:1.25rem;display:block;line-height:1}.brand-text span{font-size:.72rem;opacity:.82}.top-spacer{flex:1}.mini-progress{width:min(300px,42vw)}.mini-progress-label{display:flex;justify-content:space-between;font-size:.72rem;margin-bottom:5px}.bar{height:8px;background:rgba(255,255,255,.18);border-radius:99px;overflow:hidden}.bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--yellow),#ff9d2e);border-radius:99px;transition:.45s}
+main{max-width:1180px;margin:auto;padding:28px 18px 70px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch}.hero-card,.panel{background:rgba(255,255,255,.9);border:1px solid rgba(25,65,145,.12);border-radius:28px;box-shadow:var(--shadow)}
+.hero-copy{padding:34px;position:relative;overflow:hidden}.hero-copy:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-90px;top:-100px;background:linear-gradient(145deg,rgba(36,99,235,.18),rgba(217,32,47,.12))}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#fff1b8;border:1px dashed #c59a00;border-radius:99px;padding:7px 12px;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#644d00}.hero h1{font-family:'Baloo 2';font-size:clamp(2.4rem,5vw,4.7rem);line-height:.92;margin:18px 0 12px;color:var(--navy)}.hero h1 em{font-style:normal;color:var(--red)}.hero p{font-size:1.03rem;line-height:1.7;color:#435271;max-width:720px}.passport-preview{padding:22px;background:linear-gradient(145deg,var(--navy),#143c8c);color:white;position:relative;overflow:hidden;min-height:340px}.passport-preview:before{content:"";position:absolute;inset:14px;border:1px dashed rgba(255,255,255,.35);border-radius:22px}.preview-title{font-family:'Baloo 2';font-size:2rem;font-weight:800;position:relative}.preview-grid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:22px}.preview-slot{aspect-ratio:1;border-radius:50%;border:2px dashed rgba(255,255,255,.42);background:rgba(255,255,255,.08);display:grid;place-items:center;font-weight:800;opacity:.9}.preview-note{position:relative;margin-top:18px;background:rgba(255,255,255,.12);border-radius:16px;padding:13px;font-size:.85rem;line-height:1.5}
+.setup{margin-top:24px;padding:26px}.section-kicker{font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:.09em;font-size:.75rem}.section-title{font-family:'Baloo 2';font-size:2rem;line-height:1.05;margin:4px 0 8px;color:var(--navy)}.section-sub{color:var(--muted);line-height:1.6;margin:0 0 20px}.form-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:.8rem;font-weight:800;color:#364667}.field input,.field select{width:100%;padding:13px 14px;border:1px solid #cfd8eb;border-radius:14px;background:white;outline:none}.field input:focus,.field select:focus{border-color:var(--royal);box-shadow:0 0 0 4px rgba(36,99,235,.12)}.btn{border:0;border-radius:14px;padding:13px 17px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,var(--red),#f04452);color:white;box-shadow:0 10px 24px rgba(217,32,47,.25)}.btn-blue{background:linear-gradient(135deg,var(--blue),var(--royal));color:white}.btn-ghost{background:#edf3ff;color:var(--blue)}.btn-danger{background:#fff0f1;color:#a31220;border:1px solid #ffc6cc}.form-actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.dashboard{margin-top:26px}.profile-strip{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;padding:20px 22px}.profile-name{font-family:'Baloo 2';font-size:1.7rem;font-weight:800;color:var(--navy)}.profile-meta{color:var(--muted);font-size:.9rem}.counter{display:flex;align-items:center;gap:12px}.counter-bubble{width:66px;height:66px;border-radius:50%;background:linear-gradient(145deg,var(--yellow),#ffb61d);display:grid;place-items:center;font-family:'Baloo 2';font-weight:900;font-size:1.2rem;color:#3f2b00;box-shadow:0 9px 22px rgba(255,181,29,.27)}
+.club-section{margin-top:22px;padding:25px}.club-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.club-card{border:1px solid #dbe3f2;background:linear-gradient(180deg,#fff,#f9fbff);border-radius:22px;padding:15px;position:relative;min-height:285px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:.25s;overflow:hidden}.club-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(15,49,107,.14)}.club-card.unlocked{border-color:#f2c12d;background:linear-gradient(180deg,#fffdf3,#fff8d9)}.club-card.unlocked:before{content:"VISITED";position:absolute;top:14px;right:-34px;transform:rotate(38deg);background:var(--red);color:#fff;font-size:.64rem;font-weight:900;padding:5px 38px;letter-spacing:.08em}.sticker-wrap{width:126px;height:126px;margin:4px auto 12px;position:relative}.sticker{width:100%;height:100%;border-radius:50%;background:white;border:8px solid white;box-shadow:0 9px 18px rgba(15,35,80,.2),0 0 0 2px #e2e8f4;overflow:hidden;position:relative;transition:.45s}.sticker img{width:100%;height:100%;object-fit:contain}.locked .sticker{filter:grayscale(1);opacity:.32}.locked .sticker:after{content:"🔒";position:absolute;inset:0;display:grid;place-items:center;font-size:2.2rem;background:rgba(11,31,77,.18)}.peel{animation:peel .8s cubic-bezier(.2,.9,.25,1.2)}@keyframes peel{0%{transform:rotate(-13deg) scale(.2) translateY(-120px);opacity:0}55%{transform:rotate(5deg) scale(1.15);opacity:1}100%{transform:rotate(0) scale(1)}}.club-card h3{font-family:'Baloo 2';font-size:1.05rem;line-height:1.15;margin:0;color:var(--navy)}.club-card p{font-size:.76rem;color:var(--muted);min-height:32px}.club-card .btn{margin-top:auto;width:100%;font-size:.82rem}.status-chip{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:.72rem;font-weight:800;color:#7c6500;background:#fff5b7;border-radius:99px;padding:5px 8px}
+.passport-section{margin-top:22px;padding:25px}.rack{background:linear-gradient(135deg,#f4ead4,#fffaf0);border:2px dashed #b99357;border-radius:24px;padding:20px;position:relative}.rack:before{content:"CLUB STICKER RACK";position:absolute;top:-13px;left:22px;background:var(--navy);color:white;border-radius:8px;padding:6px 12px;font-size:.7rem;font-weight:900;letter-spacing:.08em}.rack-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}.rack-slot{aspect-ratio:1;border-radius:50%;border:2px dashed #bca77f;background:rgba(255,255,255,.58);display:grid;place-items:center;position:relative}.rack-slot img{width:86%;height:86%;border-radius:50%;object-fit:contain;background:white;border:5px solid white;box-shadow:0 6px 12px rgba(60,43,20,.18)}.rack-slot.empty:after{content:"?";font-family:'Baloo 2';font-size:1.7rem;font-weight:900;color:#b7a47e}.complete-banner{margin-top:18px;padding:16px;border-radius:18px;background:linear-gradient(135deg,#fff0ad,#ffd54a);color:#4c3500;font-weight:800;text-align:center;box-shadow:0 9px 24px rgba(255,198,41,.25)}
+.actions-section{margin-top:22px;padding:25px}.action-row{display:flex;gap:10px;flex-wrap:wrap}.privacy-note{margin-top:14px;border-left:4px solid var(--blue);background:#eef4ff;padding:13px 15px;border-radius:10px;color:#3c4e70;font-size:.84rem;line-height:1.55}
+.modal{position:fixed;inset:0;background:rgba(4,14,38,.68);display:grid;place-items:center;padding:18px;z-index:60}.modal-card{width:min(430px,100%);background:white;border-radius:25px;box-shadow:0 30px 80px rgba(0,0,0,.35);padding:24px;text-align:center}.modal-logo{width:112px;height:112px;border-radius:50%;object-fit:contain;background:white;border:7px solid white;box-shadow:0 8px 20px rgba(20,40,80,.2)}.modal-card h3{font-family:'Baloo 2';font-size:1.6rem;margin:10px 0 2px}.modal-card p{color:var(--muted);font-size:.88rem}.password-input{width:100%;padding:14px;text-align:center;letter-spacing:.12em;border:1px solid #cbd5e8;border-radius:14px;margin:9px 0}.modal-actions{display:flex;gap:9px}.modal-actions .btn{flex:1}.error{color:#b31322;font-size:.8rem;font-weight:700;min-height:18px;margin-top:4px}.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,130px);background:var(--navy);color:#fff;padding:12px 18px;border-radius:15px;box-shadow:0 12px 30px rgba(0,0,0,.25);z-index:100;font-weight:800;transition:.35s}.toast.show{transform:translate(-50%,0)}
+#passCanvas{display:none}.pass-preview-wrap{margin-top:18px;display:none}.pass-preview-wrap.show{display:block}.pass-preview-wrap img{max-width:100%;display:block;margin:auto;border-radius:20px;box-shadow:var(--shadow)}
+.footer{text-align:center;color:#66728a;font-size:.78rem;padding:26px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr 1fr}.field:first-child{grid-column:1/-1}.club-grid{grid-template-columns:repeat(3,1fr)}.rack-grid{grid-template-columns:repeat(6,1fr)}}
+@media(max-width:640px){.topbar-inner{padding:10px 12px}.brand-text span{display:none}.mini-progress{width:42vw}.hero-copy,.setup,.club-section,.passport-section,.actions-section{padding:19px}.hero h1{font-size:2.7rem}.form-grid{grid-template-columns:1fr}.field:first-child{grid-column:auto}.profile-strip{grid-template-columns:1fr}.counter{justify-content:flex-start}.club-grid{grid-template-columns:repeat(2,1fr);gap:10px}.club-card{min-height:260px;padding:11px}.sticker-wrap{width:105px;height:105px}.rack-grid{grid-template-columns:repeat(4,1fr);gap:9px}.action-row{display:grid;grid-template-columns:1fr}.action-row .btn{width:100%}}
+@media(max-width:390px){.club-grid{grid-template-columns:1fr 1fr}.club-card h3{font-size:.94rem}.rack-grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand-dot">FDF</div>
+    <div class="brand-text"><strong>Club Tour Passport</strong><span>First Day Fest 2026–2027</span></div>
+    <div class="top-spacer"></div>
+    <div class="mini-progress">
+      <div class="mini-progress-label"><span>Passport Progress</span><b id="topProgressText">0 / 16</b></div>
+      <div class="bar"><i id="topProgressBar"></i></div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-card hero-copy">
+      <span class="eyebrow">Digital Booth Passport</span>
+      <h1>Explore. Unlock. <em>Belong.</em></h1>
+      <p>Visit every High School club booth, hand your device to the booth in-charge, and collect a circular club sticker using the booth's private access code. Your progress stays only on this browser and device.</p>
+    </div>
+    <div class="hero-card passport-preview">
+      <div class="preview-title">FDF Club Tour Passport</div>
+      <div class="preview-grid" id="previewGrid"></div>
+      <div class="preview-note">Collect all 16 club stickers and present your completed digital passport at the redemption booth.</div>
+    </div>
+  </section>
+
+  <section class="panel setup" id="setupPanel">
+    <div class="section-kicker">Passport Registration</div>
+    <h2 class="section-title">Tell us who is touring</h2>
+    <p class="section-sub">Enter your details once. They will be saved locally on this device so your club-tour progress remains available even if the browser is closed.</p>
+    <div class="form-grid">
+      <div class="field"><label>Full Name</label><input id="fullName" autocomplete="name" placeholder="e.g., Juan Dela Cruz" /></div>
+      <div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g., Juan" /></div>
+      <div class="field"><label>Batch</label><select id="batch"><option value="">Select batch</option><option>Batch 1</option><option>Batch 2</option></select></div>
+      <div class="field"><label>Grade Level</label><select id="grade"><option value="">Select grade</option><option>Grade 7</option><option>Grade 8</option><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select></div>
+      <div class="field"><label>Section</label><input id="section" placeholder="e.g., Integrity / Pathway 3" /></div>
+    </div>
+    <div class="form-actions"><button class="btn btn-primary" id="startBtn">Start My Club Tour</button></div>
+  </section>
+
+  <div id="dashboard" class="dashboard hidden">
+    <section class="panel profile-strip">
+      <div><div class="profile-name" id="helloName">Hello, Mapúan!</div><div class="profile-meta" id="profileMeta"></div></div>
+      <div class="counter"><div class="counter-bubble" id="counterBubble">0/16</div><div><b>Club stickers collected</b><div class="profile-meta">Keep exploring the booths!</div></div></div>
+    </section>
+
+    <section class="panel club-section">
+      <div class="section-kicker">Club Booths</div>
+      <h2 class="section-title">Unlock your club stickers</h2>
+      <p class="section-sub">At each booth, hand your device to the booth in-charge. The in-charge will enter the booth's private code to unlock the official club sticker.</p>
+      <div class="club-grid" id="clubGrid"></div>
+    </section>
+
+    <section class="panel passport-section">
+      <div class="section-kicker">Your Collection</div>
+      <h2 class="section-title">Club Sticker Rack</h2>
+      <p class="section-sub">Every unlocked sticker is placed here automatically. Empty spaces show the booths you have not yet visited.</p>
+      <div class="rack"><div class="rack-grid" id="rackGrid"></div></div>
+      <div id="completeBanner" class="complete-banner hidden">Passport complete! You collected all 16 club stickers. Present this screen or your generated pass at the redemption booth.</div>
+    </section>
+
+    <section class="panel actions-section">
+      <div class="section-kicker">Generate Your Pass</div>
+      <h2 class="section-title">Create your Club Tour Pass</h2>
+      <p class="section-sub">You may generate your pass at any time. It will include your student details, batch, completion count, and all club stickers collected on this device.</p>
+      <div class="action-row">
+        <button class="btn btn-blue" id="previewPassBtn">Generate / Refresh Pass</button>
+        <button class="btn btn-primary" id="downloadPngBtn">Download Pass as Image</button>
+        <button class="btn btn-ghost" id="downloadPdfBtn">Save Pass as PDF</button>
+        <button class="btn btn-danger" id="resetBtn">Reset This Device</button>
+      </div>
+      <div class="privacy-note"><b>Privacy note:</b> This website does not send student information to a server. The name, details, and badge progress are stored only in this browser on this device. Other students using their own devices cannot see this progress.</div>
+      <div class="pass-preview-wrap" id="passPreviewWrap"><img id="passPreview" alt="Generated FDF Club Tour Pass" /></div>
+    </section>
+  </div>
+</main>
+<div class="footer">FDF Club Tour Passport · Mapúa Malayan Colleges Mindanao High School Department</div>
+
+<div class="modal hidden" id="unlockModal">
+  <div class="modal-card">
+    <img class="modal-logo" id="modalLogo" alt="Club logo" />
+    <h3 id="modalClubName">Club Name</h3>
+    <p>Booth in-charge: enter your private club code below. Please do not show or share the code with students.</p>
+    <input class="password-input" id="passwordInput" type="password" inputmode="text" autocomplete="off" placeholder="ENTER BOOTH CODE" />
+    <div class="error" id="passwordError"></div>
+    <div class="modal-actions"><button class="btn btn-ghost" id="cancelUnlock">Cancel</button><button class="btn btn-primary" id="confirmUnlock">Unlock Sticker</button></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<canvas id="passCanvas"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const clubs=[
+{id:'aninaw',name:'ANINAW / Inkscript',desc:'School Paper & Journalism Club',logo:'assets/logos/aninaw.webp',hash:2932756963},
+{id:'clava',name:'CLAVA SCIENTAM',desc:'Science Club',logo:'assets/logos/clava.webp',hash:98287700},
+{id:'english',name:'English Club',desc:'Language, Literature & Communication',logo:'assets/logos/english.webp',hash:89109095},
+{id:'ict',name:'ICT Club',desc:'Programming, Animation & Technology',logo:'assets/logos/ict.webp',hash:2426498508},
+{id:'kauman',name:'KAUMAN Productions',desc:'Media, Photography & Videography',logo:'assets/logos/kauman.webp',hash:3133512232},
+{id:'mdc',name:'Malayan Dance Company',desc:'Dance & Choreography',logo:'assets/logos/mdc.webp',hash:2135559668},
+{id:'moc',name:'Malayan Orientem Chorus',desc:'Music & Choir',logo:'assets/logos/moc.webp',hash:1445436812},
+{id:'mathlayan',name:'MATHLAYAN',desc:'Mathematics Club',logo:'assets/logos/mathlayan.webp',hash:3858844963},
+{id:'rcy',name:'Red Cross Youth',desc:'First Aid & Community Service',logo:'assets/logos/rcy.webp',hash:3365198701},
+{id:'samafil',name:'SamaFil',desc:'Filipino Language & Culture Club',logo:'assets/logos/samafil.webp',hash:3084317109},
+{id:'seed',name:'SEED',desc:'Campus Ministry',logo:'assets/logos/seed.webp',hash:605849380},
+{id:'sinilayan',name:'Sinilayan Arts Guild',desc:'Visual Arts Club',logo:'assets/logos/sinilayan.webp',hash:4081504615},
+{id:'sports',name:'Sports Club',desc:'Sports & Wellness',logo:'assets/logos/sports.webp',hash:3100594154},
+{id:'ssg',name:'Supreme Student Government',desc:'Student Leadership',logo:'assets/logos/ssg.webp',hash:3021369603},
+{id:'teatro',name:'Teatro Malayan',desc:'Theater & Performing Arts',logo:'assets/logos/teatro.webp',hash:1532723616},
+{id:'yec',name:'Young Entrepreneurs Club',desc:'Business & Entrepreneurship',logo:'assets/logos/yec.webp',hash:256222528}
+];
+const STORAGE='fdfClubTourPassport_v1';
+let state={profile:null,unlocked:[],issued:null};let activeClub=null;
+const $=id=>document.getElementById(id);
+function fnv1a(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function load(){try{const s=JSON.parse(localStorage.getItem(STORAGE));if(s&&s.profile) state={profile:s.profile,unlocked:Array.isArray(s.unlocked)?s.unlocked:[],issued:s.issued||null}}catch(e){}}
+function save(){localStorage.setItem(STORAGE,JSON.stringify(state))}
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(window.__tt);window.__tt=setTimeout(()=>$('toast').classList.remove('show'),2600)}
+function renderPreviewGrid(){ $('previewGrid').innerHTML=Array.from({length:16},(_,i)=>`<div class="preview-slot">${i+1}</div>`).join('') }
+function render(){const has=!!state.profile;$('setupPanel').classList.toggle('hidden',has);$('dashboard').classList.toggle('hidden',!has);const n=state.unlocked.length; $('topProgressText').textContent=`${n} / 16`; $('topProgressBar').style.width=`${n/16*100}%`; if(!has)return;
+ $('helloName').textContent=`Hello, ${state.profile.nickname||state.profile.fullName.split(' ')[0]}!`; $('profileMeta').textContent=`${state.profile.fullName} · ${state.profile.grade} – ${state.profile.section} · ${state.profile.batch}`; $('counterBubble').textContent=`${n}/16`;
+ $('clubGrid').innerHTML=clubs.map(c=>{const u=state.unlocked.includes(c.id);return `<article class="club-card ${u?'unlocked':'locked'}"><div class="sticker-wrap"><div class="sticker"><img src="${c.logo}" alt="${c.name} logo"></div></div><h3>${c.name}</h3><p>${c.desc}</p>${u?'<span class="status-chip">✓ Sticker collected</span>':''}<button class="btn ${u?'btn-ghost':'btn-blue'}" data-club="${c.id}" ${u?'disabled':''}>${u?'Already Unlocked':'Visit & Unlock'}</button></article>`}).join('');
+ document.querySelectorAll('[data-club]').forEach(b=>b.addEventListener('click',()=>openUnlock(b.dataset.club)));
+ $('rackGrid').innerHTML=clubs.map(c=>state.unlocked.includes(c.id)?`<div class="rack-slot"><img src="${c.logo}" title="${c.name}" alt="${c.name}"></div>`:`<div class="rack-slot empty"></div>`).join('');
+ $('completeBanner').classList.toggle('hidden',n!==16);
+}
+function openUnlock(id){activeClub=clubs.find(c=>c.id===id);if(!activeClub)return;$('modalLogo').src=activeClub.logo;$('modalClubName').textContent=activeClub.name;$('passwordInput').value='';$('passwordError').textContent='';$('unlockModal').classList.remove('hidden');setTimeout(()=>$('passwordInput').focus(),100)}
+function closeUnlock(){$('unlockModal').classList.add('hidden');activeClub=null}
+function unlock(){if(!activeClub)return;const code=$('passwordInput').value.trim().toUpperCase();if(fnv1a(code)!==activeClub.hash){$('passwordError').textContent='Incorrect booth code. Please ask the booth in-charge to try again.';return}if(!state.unlocked.includes(activeClub.id)){const clubName=activeClub.name;state.unlocked.push(activeClub.id);save();const id=activeClub.id;closeUnlock();render();setTimeout(()=>{const el=document.querySelector(`[data-club="${id}"]`)?.closest('.club-card')?.querySelector('.sticker');if(el)el.classList.add('peel')},40);toast(`${clubName} sticker unlocked!`)}else closeUnlock()}
+function start(){const fullName=$('fullName').value.trim(),nickname=$('nickname').value.trim(),batch=$('batch').value,grade=$('grade').value,section=$('section').value.trim();if(!fullName||!batch||!grade||!section){toast('Please complete all required student details.');return}state.profile={fullName,nickname,batch,grade,section};state.unlocked=[];state.issued=null;save();render();window.scrollTo({top:document.querySelector('.dashboard').offsetTop-80,behavior:'smooth'})}
+function loadImg(src){return new Promise((res,rej)=>{const im=new Image();im.onload=()=>res(im);im.onerror=rej;im.src=src})}
+async function generatePass(){if(!state.profile)return null;const canvas=$('passCanvas'),ctx=canvas.getContext('2d');const W=1080,margin=68;const rows=Math.ceil(Math.max(state.unlocked.length,1)/4);const H=760+rows*190;canvas.width=W;canvas.height=H;
+ const grad=ctx.createLinearGradient(0,0,W,H);grad.addColorStop(0,'#f8f3e7');grad.addColorStop(1,'#eef4ff');ctx.fillStyle=grad;ctx.fillRect(0,0,W,H);ctx.fillStyle='#0b1f4d';ctx.fillRect(0,0,W,185);ctx.fillStyle='#d9202f';ctx.fillRect(0,175,W,10);ctx.strokeStyle='#c6a25f';ctx.lineWidth=4;ctx.setLineDash([12,10]);ctx.strokeRect(28,28,W-56,H-56);ctx.setLineDash([]);
+ ctx.fillStyle='white';ctx.font='800 48px Inter, Arial';ctx.fillText('FDF CLUB TOUR PASSPORT',margin,83);ctx.font='600 24px Inter, Arial';ctx.fillText('First Day Fest 2026–2027 · High School Department',margin,127);ctx.fillStyle='#ffd54a';ctx.font='800 22px Inter, Arial';ctx.fillText('EXPLORE · UNLOCK · BELONG',margin,160);
+ ctx.fillStyle='#10213f';ctx.font='800 40px Inter, Arial';ctx.fillText(state.profile.fullName,margin,245);ctx.font='600 23px Inter, Arial';ctx.fillStyle='#52617c';ctx.fillText(`Nickname: ${state.profile.nickname||'—'}`,margin,287);ctx.fillText(`${state.profile.grade} – ${state.profile.section}`,margin,325);ctx.fillText(state.profile.batch,margin,363);
+ ctx.fillStyle='#fff1a8';roundRect(ctx,W-365,215,295,145,24,true,false);ctx.fillStyle='#4b3500';ctx.font='800 22px Inter, Arial';ctx.fillText('CLUBS VISITED',W-330,258);ctx.font='900 54px Inter, Arial';ctx.fillText(`${state.unlocked.length} / 16`,W-330,318);
+ ctx.fillStyle='#0b1f4d';ctx.font='800 28px Inter, Arial';ctx.fillText('Collected Club Stickers',margin,430);ctx.fillStyle='#6b7890';ctx.font='500 20px Inter, Arial';ctx.fillText('Only clubs visited and unlocked on this device are shown below.',margin,465);
+ const selected=clubs.filter(c=>state.unlocked.includes(c.id));const cellW=210,cellH=178,startY=500,gapX=24,gapY=18;for(let i=0;i<selected.length;i++){const c=selected[i],col=i%4,row=Math.floor(i/4),x=margin+col*(cellW+gapX),y=startY+row*(cellH+gapY);ctx.fillStyle='rgba(255,255,255,.88)';roundRect(ctx,x,y,cellW,cellH,22,true,false);const im=await loadImg(c.logo);ctx.save();ctx.beginPath();ctx.arc(x+cellW/2,y+69,55,0,Math.PI*2);ctx.clip();ctx.fillStyle='white';ctx.fillRect(x+50,y+14,110,110);ctx.drawImage(im,x+50,y+14,110,110);ctx.restore();ctx.strokeStyle='#e0b52f';ctx.lineWidth=5;ctx.beginPath();ctx.arc(x+cellW/2,y+69,58,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#10213f';ctx.font='700 16px Inter, Arial';wrapText(ctx,c.name,x+14,y+145,cellW-28,19,2)}
+ const footerY=H-130;ctx.fillStyle='#0b1f4d';roundRect(ctx,margin,footerY,W-margin*2,72,18,true,false);ctx.fillStyle='white';ctx.font='700 19px Inter, Arial';const status=state.unlocked.length===16?'PASSPORT COMPLETE — ELIGIBLE FOR REDEMPTION':'PARTIAL PASSPORT — KEEP VISITING CLUB BOOTHS';ctx.fillText(status,margin+26,footerY+32);ctx.font='500 15px Inter, Arial';const date=new Date().toLocaleString('en-PH',{dateStyle:'medium',timeStyle:'short'});ctx.fillText(`Generated: ${date}`,margin+26,footerY+56);state.issued=date;save();const url=canvas.toDataURL('image/png',1);$('passPreview').src=url;$('passPreviewWrap').classList.add('show');return url}
+function roundRect(ctx,x,y,w,h,r,fill,stroke){if(w<2*r)r=w/2;if(h<2*r)r=h/2;ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();if(fill)ctx.fill();if(stroke)ctx.stroke()}
+function wrapText(ctx,text,x,y,maxWidth,lineHeight,maxLines=3){const words=text.split(' ');let line='',lines=[];for(const word of words){const test=line?line+' '+word:word;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word}else line=test}if(line)lines.push(line);lines.slice(0,maxLines).forEach((l,i)=>{if(i===maxLines-1&&lines.length>maxLines)l=l.replace(/.$/,'…');ctx.fillText(l,x,y+i*lineHeight)})}
+async function downloadPNG(){const url=await generatePass();if(!url)return;const a=document.createElement('a');a.href=url;a.download=`FDF_Club_Tour_Pass_${safeName(state.profile.fullName)}.png`;a.click()}
+async function downloadPDF(){const url=await generatePass();if(!url)return;if(!window.jspdf){toast('PDF library is still loading. Please try again.');return}const {jsPDF}=window.jspdf;const img=new Image();img.onload=()=>{const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});const pw=210,ph=297,ratio=img.width/img.height;let w=pw-16,h=w/ratio;if(h>ph-16){h=ph-16;w=h*ratio}pdf.addImage(url,'PNG',(pw-w)/2,(ph-h)/2,w,h,undefined,'FAST');pdf.save(`FDF_Club_Tour_Pass_${safeName(state.profile.fullName)}.pdf`)};img.src=url}
+function safeName(n){return n.replace(/[^a-z0-9]+/gi,'_').replace(/^_|_$/g,'')}
+function resetAll(){if(confirm('Reset this device and erase the student details and all collected stickers?')){localStorage.removeItem(STORAGE);state={profile:null,unlocked:[],issued:null};$('passPreviewWrap').classList.remove('show');render();window.scrollTo({top:0,behavior:'smooth'})}}
+$('startBtn').addEventListener('click',start);$('cancelUnlock').addEventListener('click',closeUnlock);$('confirmUnlock').addEventListener('click',unlock);$('passwordInput').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});$('unlockModal').addEventListener('click',e=>{if(e.target===$('unlockModal'))closeUnlock()});$('previewPassBtn').addEventListener('click',generatePass);$('downloadPngBtn').addEventListener('click',downloadPNG);$('downloadPdfBtn').addEventListener('click',downloadPDF);$('resetBtn').addEventListener('click',resetAll);
+renderPreviewGrid();load();render();
+</script>
+</body>
+</html>
