@@ -1,0 +1,29 @@
+FDF CLUB TOUR PASSPORT
+PRIVATE BOOTH ACCESS CODES
+First Day Fest 2026–2027
+
+IMPORTANT:
+• Give only the assigned code to the booth in-charge or moderator.
+• Booth in-charges should enter the code themselves on the student's device.
+• Do not display or share the code publicly.
+• Codes are not case-sensitive.
+
+1. ANINAW / Inkscript — INK26
+2. CLAVA SCIENTAM — CLAVA26
+3. English Club — ENGLISH26
+4. ICT Club — CODE26
+5. KAUMAN Productions — KAUMAN26
+6. Malayan Dance Company — DANCE26
+7. Malayan Orientem Chorus — CHOIR26
+8. MATHLAYAN — MATH26
+9. Red Cross Youth — RCY26
+10. SamaFil — WIKA26
+11. SEED Campus Ministry — SEED26
+12. Sinilayan Arts Guild — ARTS26
+13. Sports Club — SPORTS26
+14. Supreme Student Government — LEAD26
+15. Teatro Malayan — TEATRO26
+16. Young Entrepreneurs Club — YEC26
+
+STATIC-WEBSITE SECURITY NOTE:
+The codes are obfuscated inside the website rather than written as plain text. However, because this is a static website hosted through GitHub Pages, no password system can be completely tamper-proof. The intended procedure is for booth personnel to enter the code privately on the student's device.
